@@ -28,13 +28,44 @@ To write a Python program to get the employee and doctor details and display the
 
 ### PROGRAM
 ```
-
+class Doctor:
+    def __init__(self ,a,b,c,d,e,a1,a2,a3,a4,a5):
+        self.a=a
+        self.b=b
+        self.c=c
+        self.d=d
+        self.e=e
+        self.a1=a1
+        self.a2=a2
+        self.a3=a3
+        self.a4=a4
+        self.a5=a5
+        
+    def display(self):
+        print(f"Doctor Object\nId:  {self.a}\nName:  {self.b}\nGender:  {self.c}\nHospital:  {self.d}")
+        print(f"Department:  {self.e}\n")
+        print(f"Patient Object\nId:  {self.a1}\nName:  {self.a2}\nGender:  {self.a3}\nHospital:  {self.a4}")
+        print(f"Department:  {a5}")
+        
+a=int(input())
+b=input()
+c=input()
+d=input()
+e=input()
+a1=int(input())
+a2=input()
+a3=input()
+a4=input()
+a5=input()
+Doctor=Doctor(a,b,c,d,e,a1,a2,a3,a4,a5)
+Doctor.display()
 
 ```
 
 ### OUTPUT  
-
-(Output Screenshot)  
+![image](https://github.com/user-attachments/assets/40b11d0c-fa74-4858-b8f6-27f4ee1b349a)
 
 
 ### RESULT
+Thus the program Hierarchical Inheritance have been executed and verified sucessfully.
+
