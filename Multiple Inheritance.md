@@ -32,13 +32,70 @@ To write a Python program to get the name, attendance, and ID of a student and c
 ### PROGRAM
 
 ```
+# Hybrid Inheritance
+class vehicle:
+    
+    def __init__(self,model,mileage):
+        
+        self.mileage = mileage
+        self.model = model
+        
+    def show_details(self):
+        print(f'Model : {self.model}')
+       
+        print(f'Mileage : {self.mileage}')
+                
+class bike(vehicle):
+    
+    # Inherit Properties and Override
+    def __init__(self,model,mileage,tyre,cc):
+        super().__init__(model,mileage)
+        self.cc = cc
+        self.tyre = tyre
+    
+    # Inherit Behavior and Override
+    def show_details(self):
+        super().show_details()
+        print(f'CC : {self.cc}')
+        print(f'Tyres : {self.tyre}')
+    
+    # Method of Derived Class
+    def rating(self):
+        print('4 star')
+        
 
+class car(bike,vehicle):
+    
+    def rating(self):
+        print('5 star')
+
+name=input()
+mile=int(input())
+
+tyre=int(input())
+cc=int(input())
+
+nam=input()
+mil=int(input())
+
+tyr=int(input())
+cc1=int(input())
+bajaj = bike(name,mile,tyre,cc)
+tata = car(nam,mil,tyr,cc1)
+
+bajaj.show_details()
+tata.show_details()
+
+bajaj.rating()
+tata.rating()
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/7846b2a1-ebff-442c-b704-32eeff764b88)
 
 
 ### RESULT
+Thus the program Multiple Inheritance have been executed and verified sucessfully.
 
 
 
