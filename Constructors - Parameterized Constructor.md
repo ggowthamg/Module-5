@@ -24,9 +24,18 @@ To write a Python code to create a class for a person with a parameterized const
 ### PROGRAM
 
 ```
-
+class fam:
+    def __init__ (self,a):
+        self.a=a;
+        print("This is parametrized constructor");
+        print(f"No. of members are  {self.a}");
+        
+a = int(input());
+fam(a);
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/a897952d-e294-4667-8b55-58737dd802b6)
 
 ### RESULT
+Thus the program Parameterized Constructor have been executed and verified sucessfully.
