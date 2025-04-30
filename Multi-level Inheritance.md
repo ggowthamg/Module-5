@@ -39,10 +39,67 @@ To write a Python program to get the name, age, and ID of a person and display t
 ### PROGRAM
 
 ```
+# Hybrid Inheritance
+class vehicle:
+    
+    def __init__(self,model,mileage,price):
+        self.price = price
+        self.mileage = mileage
+        self.model = model
+        
+    def show_details(self):
+        print(f'Model : {self.model}')
+        print(f'Price : {self.price}')
+        print(f'Mileage : {self.mileage}')
+                
+class bike(vehicle):
+    
+    # Inherit Properties and Override
+    def __init__(self,model,mileage,price,tyre,cc):
+        super().__init__(model,mileage,price)
+        self.cc = cc
+        self.tyre = tyre
+    
+    # Inherit Behavior and Override
+    def show_details(self):
+        super().show_details()
+        print(f'CC : {self.cc}')
+        print(f'Tyres : {self.tyre}')
+    
+    # Method of Derived Class
+    def rating(self):
+        print('4 star')
+        
 
+class car(bike,vehicle):
+    
+    def rating(self):
+        print('5 star')
+
+name=input()
+mile=int(input())
+price=int(input())
+tyre=int(input())
+cc=int(input())
+
+nam=input()
+mil=int(input())
+pri=int(input())
+tyr=int(input())
+cc1=int(input())
+bajaj = bike(name,mile,price,tyre,cc)
+tata = car(nam,mil,pri,tyr,cc1)
+
+bajaj.show_details()
+tata.show_details()
+
+bajaj.rating()
+tata.rating()
 
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/6e730fa1-9ec2-4607-b2fb-29f5ce69fdf3)
 
 ### RESULT
+Thus the program Multi-level Inheritance have been executed and verified sucessfully.
